@@ -1,0 +1,38 @@
+#!/bin/bash
+
+echo "Exporting all aseprite files"
+for i in *.ase; do
+    filename="${i%.*}"
+    echo $filename
+    /Applications/Aseprite.app/Contents/MacOS/aseprite -b $filename.ase --save-as ${filename}1.png
+done
+
+echo "Breaking tileset"
+convert tileset.png -crop 8x8 tile.png
+for i in tile-*.png; do
+   if [ $(convert $i -alpha extract -format "%[fx:mean==0?0:1]" info:) == 0 ]; then
+        echo "Deleting empty sprite $i"
+        rm $i
+    fi
+done
+
+echo "Processing *.ase files"
+for i in *.ase; do
+    extension="${i##*.}"
+    filename="${i%.*}"
+
+    echo "Processing the files exported from $i ..."
+
+    for j in $filename*.png; do
+        if [[ $j =~ $filename[0-9]+\.png ]]; then
+            dimension=$(magick identify $j | awk '{ print $3 }')
+            if [ "$dimension" == "16x16" ]; then
+                echo "$j is 16x16 already";
+            else
+                convert $j -filter point -resize 200% $j
+                echo "$j converted to 16x16"
+            fi
+        fi
+    done
+done
+

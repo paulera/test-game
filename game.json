@@ -1,0 +1,512 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 98,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adMobAppId": "",
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "linuxExecutableFilename": "",
+    "macExecutableFilename": "",
+    "orientation": "portrait",
+    "packageName": "com.example.gamename",
+    "projectFile": "/Users/paulo/workspace/gdevelop/dungeon_run/game.json",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "winExecutableFilename": "",
+    "winExecutableIconFile": "",
+    "name": "Project",
+    "author": "",
+    "windowWidth": 432,
+    "windowHeight": 480,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 40,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "showGDevelopSplash": true
+    },
+    "extensions": [
+      {
+        "name": "BuiltinObject"
+      },
+      {
+        "name": "BuiltinAudio"
+      },
+      {
+        "name": "BuiltinVariables"
+      },
+      {
+        "name": "BuiltinTime"
+      },
+      {
+        "name": "BuiltinMouse"
+      },
+      {
+        "name": "BuiltinKeyboard"
+      },
+      {
+        "name": "BuiltinJoystick"
+      },
+      {
+        "name": "BuiltinCamera"
+      },
+      {
+        "name": "BuiltinWindow"
+      },
+      {
+        "name": "BuiltinFile"
+      },
+      {
+        "name": "BuiltinNetwork"
+      },
+      {
+        "name": "BuiltinScene"
+      },
+      {
+        "name": "BuiltinAdvanced"
+      },
+      {
+        "name": "Sprite"
+      },
+      {
+        "name": "BuiltinCommonInstructions"
+      },
+      {
+        "name": "BuiltinCommonConversions"
+      },
+      {
+        "name": "BuiltinStringInstructions"
+      },
+      {
+        "name": "BuiltinMathematicalTools"
+      },
+      {
+        "name": "BuiltinExternalLayouts"
+      }
+    ],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/tile-17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/tile-17.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/idle2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/idle1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walk1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/walk1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walk2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/walk2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walk3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/walk3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/walk4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/walk4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/jump2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/jump3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/jump3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/jump4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/jump4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/jump5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/jump5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/fall1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/fall1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/fall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/fall2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/punch1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/punch1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/punch2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/punch2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/punch3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/punch3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/punch4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/punch4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/uppercut6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/uppercut6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/flying_kick1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/flying_kick1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/flying_kick2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/flying_kick2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/flying_kick3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/flying_kick3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/flying_kick4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/flying_kick4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/flying_kick5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/flying_kick5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/bullet_pistol.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/bullet_pistol.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/pistol1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/pistol1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/player_spawn.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/player_spawn.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/spring1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/spring1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/spring5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/spring5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/spring4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/spring4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/spring3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/spring3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "sprites/spring2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "sprites/spring2.png",
+        "smoothed": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/playerevents"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/weaponevents"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/propsevents"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/level_0"
+    }
+  ],
+  "externalSourceFiles": []
+}

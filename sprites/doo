@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "Removing all PNG files"
+echo "----------------------"
+echo
+
+rm *.png
+
+echo "Exporting all aseprite files"
+echo "----------------------------"
+echo
+
+for i in *.ase; do
+    filename="${i%.*}"
+    echo "Exporting $i"
+    /Applications/Aseprite.app/Contents/MacOS/aseprite -b $filename.ase --save-as ${filename}.png
+done
+
+echo 
+
+echo "Breaking tileset"
+echo "----------------"
+echo
+
+convert tile.png -crop 8x8 tile.png
+
+echo "Deleting empty sprites"
+for i in tile-*.png; do
+   if [ $(convert $i -alpha extract -format "%[fx:mean==0?0:1]" info:) == 0 ]; then
+        echo "Deleting empty sprite $i"
+        rm $i
+    fi
+done
+
+echo
+echo "Resizing all sprintes from *.ase files"
+echo "--------------------------------------"
+echo
+
+size="32x32"
+percent="400%"
+
+for i in *.ase; do
+    extension="${i##*.}"
+    filename="${i%.*}"
+
+    echo "Processing the files exported from $i ..."
+
+    for j in $filename*.png; do
+        if [[ $j =~ $filename[\-]*[0-9]*\.png ]]; then
+            dimension=$(magick identify $j | awk '{ print $3 }')
+            if [ "$dimension" == "32x32" ]; then
+                echo "$j is $size already";
+            else
+                convert $j -filter point -resize $percent $j
+                echo "$j converted to $size"
+            fi
+        fi
+    done
+
+    echo
+
+done
